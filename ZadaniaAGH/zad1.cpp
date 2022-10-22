@@ -6,7 +6,7 @@
 using namespace std;
 
  
-int chuj() {
+int main() {
 	int mianownik = 0, licznik = 0;
 	cin >> licznik >> mianownik;
 

@@ -26,7 +26,7 @@ LandMpair divideNumbers(LandMpair other, LandMpair main) {
     };
 }
 
-int fdsfdsfdsfdsfsd()
+int main()
 {
     int numberOfNumbers = 0;
     cin >> numberOfNumbers;
