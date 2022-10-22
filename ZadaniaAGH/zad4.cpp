@@ -22,7 +22,7 @@ long long   LogSmallestPrimeFromSums(int& n) {
 	return umap[n];
 }
 /*
-int getSum(int n) {
+int getSum(int &n) {
 	int sum = 0;
 	while (n!= 0){
 		sum = sum + n % 10;
