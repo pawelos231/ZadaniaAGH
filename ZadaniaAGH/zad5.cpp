@@ -9,13 +9,6 @@ struct LandMpair {
     int mianownik;
 };
 
-LandMpair divideNumbers(LandMpair other, LandMpair main) {
-    return LandMpair{
-        main.licznik* other.mianownik, 
-        main.mianownik* other.licznik
-    };
-}
-
 bool isNumbersEqual(LandMpair other, LandMpair main) {
     int a = main.licznik;
     int b = main.mianownik;
@@ -25,7 +18,15 @@ bool isNumbersEqual(LandMpair other, LandMpair main) {
     return (a * d - b * c) == 0;
 }
 
-int fsdfdsasfdfsf()
+
+LandMpair divideNumbers(LandMpair other, LandMpair main) {
+    return LandMpair{
+        main.licznik* other.mianownik, 
+        main.mianownik* other.licznik
+    };
+}
+
+int fdsfdsfdsfdsfsd()
 {
     int numberOfNumbers = 0;
     cin >> numberOfNumbers;
@@ -33,20 +34,22 @@ int fsdfdsasfdfsf()
     vector<LandMpair> vectorOfSeq;
 
     for (int i = 0; i < numberOfNumbers; i++) {
-        int l = 0;
-        int m = 0;
-        cin >> l >> m;
-        vectorOfSeq.push_back(LandMpair{ l, m });
+        int licznik = 0;
+        int mianownik = 0;
+        cin >> licznik >> mianownik;
+        vectorOfSeq.push_back(LandMpair{licznik,mianownik});
     }
 
     short curr = 0;
     int maxLength = 0;
 
     int lengthOfCurrSeq = 0;
+
     LandMpair q;
     LandMpair first;
     LandMpair second;
     LandMpair third;
+
     while (curr != vectorOfSeq.size() && curr + lengthOfCurrSeq + 2 < vectorOfSeq.size()) {
         first = vectorOfSeq[curr + lengthOfCurrSeq];
         second = vectorOfSeq[curr + lengthOfCurrSeq + 1];
